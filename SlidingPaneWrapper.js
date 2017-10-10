@@ -22,6 +22,10 @@ export default class SlidingPaneWrapper extends React.Component {
       this.activePane = this.activePane - 1;
     }
   }
+  
+  setActiveIndex(index) {
+    this.activePane = index;
+  }
 
   setActive(index) {
     if (index != this.activePane) {
